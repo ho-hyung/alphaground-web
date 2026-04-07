@@ -12,6 +12,9 @@ import { PaywallGate } from '@/components/PaywallGate'
 import { AlertButton } from '@/components/AlertButton'
 import { ConsultButton } from '@/components/ConsultButton'
 import { CautionScreen } from '@/components/CautionScreen'
+import { BookmarkButton } from '@/components/BookmarkButton'
+import { RecentlyViewedTracker } from '@/components/RecentlyViewedTracker'
+import { createClient } from '@/lib/supabase/server'
 import { formatCurrency, formatDate, formatArea } from '@/lib/format'
 import type { Property, PropertyReport, LegalCheck, RiskFactor } from '@/types/property'
 
@@ -138,14 +141,23 @@ export default async function PropertyDetailPage({ params }: PageProps) {
   ).toFixed(1)
   const isPremium = property.score >= PREMIUM_SCORE_THRESHOLD
 
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+
   return (
     <div className="space-y-6 max-w-4xl mx-auto">
-      <div className="flex items-center gap-2 text-sm text-slate-400">
-        <Link href="/" className="hover:text-slate-200 transition-colors">
-          ← 매물 목록
-        </Link>
-        <span>/</span>
-        <span className="font-mono">{property.caseNumber}</span>
+      {/* 방문 기록 자동 저장 */}
+      <RecentlyViewedTracker caseNumber={property.caseNumber} />
+
+      <div className="flex items-center justify-between gap-2 text-sm text-slate-400">
+        <div className="flex items-center gap-2">
+          <Link href="/" className="hover:text-slate-200 transition-colors">
+            ← 매물 목록
+          </Link>
+          <span>/</span>
+          <span className="font-mono">{property.caseNumber}</span>
+        </div>
+        <BookmarkButton caseNumber={property.caseNumber} isLoggedIn={!!user} />
       </div>
 
       {/* 기본 정보 */}
