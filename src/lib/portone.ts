@@ -29,6 +29,18 @@ export interface PortonePaymentLink {
   paymentLinkUrl: string
 }
 
+async function parsePortoneError(response: Response): Promise<string> {
+  const text = await response.text().catch(() => '')
+  if (!text) return ''
+  try {
+    const json = JSON.parse(text)
+    // 포트원 v2 에러 형식: { code, message } 또는 { type, message }
+    return json.message ?? json.code ?? text
+  } catch {
+    return text
+  }
+}
+
 /**
  * 포트원 v2 결제 링크 생성
  */
@@ -39,7 +51,10 @@ export async function createPaymentLink(
 
   const expires = expiresAt ?? new Date(Date.now() + 7 * 24 * 60 * 60 * 1000)
 
-  const body = {
+  // storeId는 복수 스토어 계정에서 필요. 단일 스토어면 생략 가능
+  const storeId = process.env.PORTONE_STORE_ID
+
+  const body: Record<string, unknown> = {
     channelKey: getChannelKey(),
     orderName: orderName ?? 'AlphaGround 얼리버드 멤버십',
     amount: {
@@ -52,6 +67,8 @@ export async function createPaymentLink(
     expiresAt: expires.toISOString(),
   }
 
+  if (storeId) body.storeId = storeId
+
   const response = await fetch(`${PORTONE_API_BASE}/payment-links`, {
     method: 'POST',
     headers: {
@@ -62,15 +79,15 @@ export async function createPaymentLink(
   })
 
   if (!response.ok) {
-    const errorBody = await response.text().catch(() => '')
-    const hint =
-      response.status === 404
-        ? ' [힌트: 채널 키가 올바른지 포트원 관리자 > 채널 관리에서 확인하세요]'
-        : response.status === 401
-        ? ' [힌트: PORTONE_API_SECRET이 올바른지 확인하세요]'
-        : ''
+    const errorMsg = await parsePortoneError(response)
+    let hint = ''
+    if (response.status === 404) {
+      hint = ' → 채널 키 확인 (포트원 관리자 > 채널 관리) 또는 PORTONE_STORE_ID 환경변수 추가 필요'
+    } else if (response.status === 401 || response.status === 403) {
+      hint = ' → PORTONE_API_SECRET이 올바른지 확인'
+    }
     throw new Error(
-      `포트원 결제 링크 생성 실패 (${response.status})${errorBody ? ': ' + errorBody : ''}${hint}`
+      `포트원 결제 링크 생성 실패 (${response.status})${errorMsg ? ': ' + errorMsg : ''}${hint}`
     )
   }
 
@@ -136,8 +153,8 @@ export async function getPayment(paymentId: string) {
   })
 
   if (!response.ok) {
-    const errorBody = await response.text()
-    throw new Error(`포트원 결제 조회 실패 (${response.status}): ${errorBody}`)
+    const errorMsg = await parsePortoneError(response)
+    throw new Error(`포트원 결제 조회 실패 (${response.status})${errorMsg ? ': ' + errorMsg : ''}`)
   }
 
   return response.json()

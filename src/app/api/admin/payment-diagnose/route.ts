@@ -19,6 +19,7 @@ export async function GET(request: NextRequest) {
   const envVars = [
     'PORTONE_API_SECRET',
     'PORTONE_CHANNEL_KEY',
+    'PORTONE_STORE_ID',
     'PORTONE_WEBHOOK_SECRET',
     'PORTONE_MEMBERSHIP_PRICE',
     'NEXT_PUBLIC_SUPABASE_URL',
@@ -62,6 +63,6 @@ export async function GET(request: NextRequest) {
   return NextResponse.json({
     envVars: checks,
     portoneApiStatus: portoneStatus,
-    note: '채널 키 404 오류 시: 포트원 관리자 > 채널 관리 > 채널 키 확인. "channel-key-{uuid}" 형식이어야 합니다.',
+    note: '채널 키 404 오류 시: ① 채널 키 확인 (포트원 관리자 > 채널 관리, "channel-key-{uuid}" 형식) ② 복수 스토어 계정이면 PORTONE_STORE_ID 환경변수 추가 필요 (포트원 관리자 > 상점 정보에서 "store-{uuid}" 형식 확인)',
   })
 }
