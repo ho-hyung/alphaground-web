@@ -10,6 +10,14 @@ export async function GET(request: Request) {
     const supabase = await createClient()
     const { error } = await supabase.auth.exchangeCodeForSession(code)
     if (!error) {
+      // 로그인 성공 시 public.users upsert (트리거 미실행 케이스 대비)
+      const { data: { user } } = await supabase.auth.getUser()
+      if (user) {
+        await supabase.from('users').upsert(
+          { id: user.id, email: user.email ?? '' },
+          { onConflict: 'id', ignoreDuplicates: true }
+        )
+      }
       return NextResponse.redirect(`${origin}${next}`)
     }
   }
