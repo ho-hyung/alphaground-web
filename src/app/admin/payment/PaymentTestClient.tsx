@@ -47,18 +47,12 @@ export function PaymentTestClient({ initialPayments, defaultPrice }: Props) {
     setGeneratedUrl(null)
 
     startTransition(async () => {
-      try {
-        const result = await createTestPaymentLink(formData)
-        setGeneratedUrl(result.paymentLinkUrl)
-        // Refresh list
-        const res = await fetch('/admin/payment?refresh=1')
-        if (res.ok) {
-          const json = await res.json().catch(() => null)
-          if (json?.payments) setPayments(json.payments)
-        }
-      } catch (e) {
-        setError(e instanceof Error ? e.message : '결제 링크 생성 실패')
+      const result = await createTestPaymentLink(formData)
+      if (!result.ok) {
+        setError(result.error)
+        return
       }
+      setGeneratedUrl(result.data.paymentLinkUrl)
     })
   }
 
