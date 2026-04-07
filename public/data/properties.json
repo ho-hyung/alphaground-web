@@ -6,7 +6,7 @@
     "district": "서울특별시",
     "address": "서울특별시 동작구 상도1동 519-1 (더포레스트)",
     "propertyType": "연립주택,다세대,빌라",
-    "area": 0,
+    "area": 38.67,
     "minimumBid": 29192000,
     "estimatedValue": 174000000,
     "roi": 441.9,
@@ -35,8 +35,10 @@
       "dong": "상도1동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 4
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 4,
+    "lat": 37.4998,
+    "lng": 126.9428
   },
   {
     "id": "2024타경121266",
@@ -45,7 +47,7 @@
     "district": "서울특별시",
     "address": "서울특별시 서초구 양재동 17-15 (피카소)",
     "propertyType": "다세대",
-    "area": 0,
+    "area": 59.45,
     "minimumBid": 100495000,
     "estimatedValue": 599000000,
     "roi": 441.9,
@@ -74,8 +76,10 @@
       "dong": "양재동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 8
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 8,
+    "lat": 37.4757,
+    "lng": 127.0451
   },
   {
     "id": "2024타경124531",
@@ -84,7 +88,7 @@
     "district": "서울특별시",
     "address": "서울특별시 관악구 신림동 1437-19 (태양오피스텔)",
     "propertyType": "다세대",
-    "area": 0,
+    "area": 84.97,
     "minimumBid": 43200000,
     "estimatedValue": 206000000,
     "roi": 333.5,
@@ -113,8 +117,10 @@
       "dong": "신림동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 5
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 5,
+    "lat": 37.484,
+    "lng": 126.9246
   },
   {
     "id": "2024타경121259",
@@ -123,7 +129,7 @@
     "district": "서울특별시",
     "address": "서울특별시 동작구 사당동 44-179 (디에스리브1단지디에스리브1단지102동)",
     "propertyType": "다세대",
-    "area": 0,
+    "area": 59.99,
     "minimumBid": 102550000,
     "estimatedValue": 489000000,
     "roi": 333.5,
@@ -152,8 +158,10 @@
       "dong": "사당동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 6
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 6,
+    "lat": 37.4784,
+    "lng": 126.9792
   },
   {
     "id": "2024타경124807",
@@ -162,7 +170,7 @@
     "district": "서울특별시",
     "address": "서울특별시 종로구 옥인동 178-35",
     "propertyType": "다세대",
-    "area": 0,
+    "area": 42.63,
     "minimumBid": 42467000,
     "estimatedValue": 162000000,
     "roi": 246.8,
@@ -191,8 +199,10 @@
       "dong": "숭인동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 2
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 2,
+    "lat": 37.5823,
+    "lng": 126.9693
   },
   {
     "id": "2025타경102360",
@@ -201,7 +211,7 @@
     "district": "서울특별시",
     "address": "서울특별시 관악구 신림동 1425-4",
     "propertyType": "아파트",
-    "area": 0,
+    "area": 34.29,
     "minimumBid": 25166000,
     "estimatedValue": 96000000,
     "roi": 246.8,
@@ -231,8 +241,10 @@
       "dong": "신림동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 3
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 3,
+    "lat": 37.484,
+    "lng": 126.9246
   },
   {
     "id": "2025타경102367",
@@ -241,7 +253,7 @@
     "district": "서울특별시",
     "address": "서울특별시 관악구 봉천동 1535-52 (수팰리스에프티)",
     "propertyType": "다세대",
-    "area": 0,
+    "area": 116.86,
     "minimumBid": 110363000,
     "estimatedValue": 421000000,
     "roi": 246.8,
@@ -270,8 +282,10 @@
       "dong": "봉천동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 9
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 9,
+    "lat": 37.4791,
+    "lng": 126.9517
   },
   {
     "id": "2025타경102337",
@@ -280,7 +294,7 @@
     "district": "서울특별시",
     "address": "서울특별시 관악구 신림동 610-399 (청운아트빌)",
     "propertyType": "연립주택,다세대,빌라",
-    "area": 0,
+    "area": 84.97,
     "minimumBid": 97649000,
     "estimatedValue": 298000000,
     "roi": 177.4,
@@ -309,8 +323,10 @@
       "dong": "신림동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 11
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 11,
+    "lat": 37.484,
+    "lng": 126.9246
   },
   {
     "id": "2025타경102366",
@@ -319,7 +335,7 @@
     "district": "서울특별시",
     "address": "서울특별시 관악구 신림동 1567-6 (위드비엠)",
     "propertyType": "연립주택,다세대,빌라",
-    "area": 0,
+    "area": 84.97,
     "minimumBid": 104858000,
     "estimatedValue": 320000000,
     "roi": 177.4,
@@ -348,8 +364,10 @@
       "dong": "신림동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 13
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 13,
+    "lat": 37.484,
+    "lng": 126.9246
   },
   {
     "id": "2025타경100105",
@@ -358,7 +376,7 @@
     "district": "서울특별시",
     "address": "서울특별시 중구 오장동 145-1 (오렌지카운티을지로)",
     "propertyType": "다세대",
-    "area": 0,
+    "area": 51.43,
     "minimumBid": 70778000,
     "estimatedValue": 216000000,
     "roi": 177.4,
@@ -387,8 +405,10 @@
       "dong": "오장동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 15
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 15,
+    "lat": 37.5638,
+    "lng": 127.0095
   },
   {
     "id": "2025타경102046",
@@ -397,7 +417,7 @@
     "district": "서울특별시",
     "address": "서울특별시 동작구 상도동 7-159 (아침햇살2)",
     "propertyType": "다세대",
-    "area": 0,
+    "area": 84.88,
     "minimumBid": 173670000,
     "estimatedValue": 424000000,
     "roi": 121.9,
@@ -426,8 +446,10 @@
       "dong": "상도동"
     },
     "specialNotes": "제시외 건물 포함",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 7
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 7,
+    "lat": 37.5055,
+    "lng": 126.9479
   },
   {
     "id": "2021타경105850",
@@ -436,7 +458,7 @@
     "district": "서울특별시",
     "address": "서울특별시 서초구 잠원동 24-21",
     "propertyType": "다세대",
-    "area": 0,
+    "area": 84.78,
     "minimumBid": 5278515000,
     "estimatedValue": 12887000000,
     "roi": 121.9,
@@ -465,8 +487,10 @@
       "dong": "잠원동"
     },
     "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 25
+    "generatedAt": "2026-04-07T02:14:55.540Z",
+    "_rank": 25,
+    "lat": 37.5119,
+    "lng": 127.0049
   },
   {
     "id": "2024타경109389",
@@ -475,7 +499,7 @@
     "district": "서울특별시",
     "address": "서울특별시 관악구 봉천동 14-96",
     "propertyType": "다세대",
-    "area": 0,
+    "area": 116.86,
     "minimumBid": 125952000,
     "estimatedValue": 246000000,
     "roi": 77.6,
@@ -502,8 +526,10 @@
       "dong": "봉천동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 10
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 10,
+    "lat": 37.4791,
+    "lng": 126.9517
   },
   {
     "id": "2023타경114094",
@@ -512,7 +538,7 @@
     "district": "서울특별시",
     "address": "서울특별시 관악구 신림동 99-23",
     "propertyType": "다세대",
-    "area": 0,
+    "area": 84.97,
     "minimumBid": 152320000,
     "estimatedValue": 238000000,
     "roi": 42,
@@ -539,8 +565,10 @@
       "dong": "신림동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 14
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 14,
+    "lat": 37.484,
+    "lng": 126.9246
   },
   {
     "id": "2025타경100488",
@@ -549,7 +577,7 @@
     "district": "서울특별시",
     "address": "서울특별시 강남구 청담동 59-30 (청담)",
     "propertyType": "연립주택,다세대,빌라",
-    "area": 0,
+    "area": 59.99,
     "minimumBid": 1168000000,
     "estimatedValue": 1460000000,
     "roi": 13.6,
@@ -576,8 +604,10 @@
       "dong": "청담동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 21
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 21,
+    "lat": 37.5272,
+    "lng": 127.0492
   },
   {
     "id": "2024타경6220",
@@ -586,7 +616,7 @@
     "district": "서울특별시",
     "address": "서울특별시 중구 신당동 432-349",
     "propertyType": "다세대",
-    "area": 0,
+    "area": 25.0,
     "minimumBid": 105000000,
     "estimatedValue": 105000000,
     "roi": -9.1,
@@ -613,8 +643,10 @@
       "dong": "신당동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.463Z",
-    "_rank": 1
+    "generatedAt": "2026-04-07T02:14:55.535Z",
+    "_rank": 1,
+    "lat": 37.5611,
+    "lng": 127.0182
   },
   {
     "id": "2025타경102076",
@@ -623,7 +655,7 @@
     "district": "서울특별시",
     "address": "서울특별시 동작구 상도동 301-28 (푸른주택)",
     "propertyType": "다세대",
-    "area": 0,
+    "area": 84.88,
     "minimumBid": 259000000,
     "estimatedValue": 259000000,
     "roi": -9.1,
@@ -650,8 +682,10 @@
       "dong": "상도동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 12
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 12,
+    "lat": 37.5055,
+    "lng": 126.9479
   },
   {
     "id": "2025타경101061",
@@ -660,7 +694,7 @@
     "district": "서울특별시",
     "address": "서울특별시 강남구 논현동 222-30",
     "propertyType": "다세대",
-    "area": 0,
+    "area": 50.33,
     "minimumBid": 604000000,
     "estimatedValue": 604000000,
     "roi": -9.1,
@@ -687,8 +721,10 @@
       "dong": "논현동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 16
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 16,
+    "lat": 37.5145,
+    "lng": 127.0302
   },
   {
     "id": "2023타경114490",
@@ -697,7 +733,7 @@
     "district": "서울특별시",
     "address": "서울특별시 관악구 봉천동 1622-23 (샤롯캐슬)",
     "propertyType": "다세대",
-    "area": 0,
+    "area": 116.86,
     "minimumBid": 307000000,
     "estimatedValue": 307000000,
     "roi": -9.1,
@@ -724,8 +760,10 @@
       "dong": "봉천동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 17
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 17,
+    "lat": 37.4791,
+    "lng": 126.9517
   },
   {
     "id": "2025타경100631",
@@ -734,7 +772,7 @@
     "district": "서울특별시",
     "address": "서울특별시 관악구 신림동 624-14 (바벨)",
     "propertyType": "다세대",
-    "area": 0,
+    "area": 84.97,
     "minimumBid": 248000000,
     "estimatedValue": 248000000,
     "roi": -9.1,
@@ -762,8 +800,10 @@
       "dong": "신림동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 18
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 18,
+    "lat": 37.484,
+    "lng": 126.9246
   },
   {
     "id": "2025타경100648",
@@ -772,7 +812,7 @@
     "district": "서울특별시",
     "address": "서울특별시 관악구 신림동 624-14 (바벨)",
     "propertyType": "연립주택,다세대,빌라",
-    "area": 0,
+    "area": 84.97,
     "minimumBid": 258000000,
     "estimatedValue": 258000000,
     "roi": -9.1,
@@ -800,8 +840,10 @@
       "dong": "신림동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 19
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 19,
+    "lat": 37.484,
+    "lng": 126.9246
   },
   {
     "id": "2025타경102220",
@@ -810,7 +852,7 @@
     "district": "서울특별시",
     "address": "서울특별시 동작구 대방동 378-21 (시그니처)",
     "propertyType": "다세대",
-    "area": 0,
+    "area": 126.67,
     "minimumBid": 570000000,
     "estimatedValue": 570000000,
     "roi": -9.1,
@@ -838,8 +880,10 @@
       "dong": "신대방동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 20
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 20,
+    "lat": 37.5087,
+    "lng": 126.9345
   },
   {
     "id": "2023타경6278",
@@ -848,7 +892,7 @@
     "district": "서울특별시",
     "address": "서울특별시 강남구 도곡동 527 (도곡렉슬아파트)",
     "propertyType": "아파트",
-    "area": 0,
+    "area": 130.26,
     "minimumBid": 2700000000,
     "estimatedValue": 2700000000,
     "roi": -9.1,
@@ -876,8 +920,10 @@
       "dong": "도곡동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 22
+    "generatedAt": "2026-04-07T02:14:55.539Z",
+    "_rank": 22,
+    "lat": 37.4969,
+    "lng": 127.0483
   },
   {
     "id": "2025타경2416",
@@ -886,7 +932,7 @@
     "district": "서울특별시",
     "address": "서울특별시 강남구 청담동 90-13 (에비뉴나인티)",
     "propertyType": "아파트",
-    "area": 0,
+    "area": 59.99,
     "minimumBid": 1940000000,
     "estimatedValue": 1940000000,
     "roi": -9.1,
@@ -914,8 +960,10 @@
       "dong": "청담동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 23
+    "generatedAt": "2026-04-07T02:14:55.540Z",
+    "_rank": 23,
+    "lat": 37.5272,
+    "lng": 127.0492
   },
   {
     "id": "2024타경120980",
@@ -924,7 +972,7 @@
     "district": "서울특별시",
     "address": "서울특별시 동작구 상도1동 417-4 (예준빌)",
     "propertyType": "다세대",
-    "area": 0,
+    "area": 73.15,
     "minimumBid": 551000000,
     "estimatedValue": 551000000,
     "roi": -9.1,
@@ -952,7 +1000,9 @@
       "dong": "상도1동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T02:08:48.464Z",
-    "_rank": 24
+    "generatedAt": "2026-04-07T02:14:55.540Z",
+    "_rank": 24,
+    "lat": 37.4998,
+    "lng": 126.9428
   }
 ]
