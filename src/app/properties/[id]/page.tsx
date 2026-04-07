@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
-import Link from 'next/link'
 import { readFile } from 'fs/promises'
 import path from 'path'
+import Link from 'next/link'
 import { Separator } from '@/components/ui/separator'
 import { Badge } from '@/components/ui/badge'
 import { JudgmentBadge } from '@/components/JudgmentBadge'
@@ -23,25 +23,40 @@ interface PageProps {
 }
 
 async function getPropertyDetail(caseNumber: string) {
-  // public/data/ 우선 (Vercel 정적 파일), 없으면 data/ 폴백
-  const listCandidates = [
-    path.join(process.cwd(), 'public', 'data', 'properties.json'),
-    path.join(process.cwd(), 'data', 'properties.json'),
-  ]
-  let listRaw = ''
-  for (const p of listCandidates) {
-    try {
-      listRaw = await readFile(p, 'utf-8')
-      break
-    } catch { /* 다음 경로 시도 */ }
+  const supabase = await createClient()
+
+  const { data: row, error } = await supabase
+    .from('properties')
+    .select('*')
+    .eq('case_number', caseNumber)
+    .maybeSingle()
+
+  if (error || !row) return null
+
+  const property: Property = {
+    id: String(row.id),
+    caseNumber: String(row.case_number),
+    region: row.region as Property['region'],
+    district: String(row.district),
+    address: String(row.address),
+    propertyType: String(row.property_type),
+    area: Number(row.area),
+    minimumBid: Number(row.minimum_bid),
+    estimatedValue: Number(row.estimated_value),
+    roi: Number(row.roi),
+    legalJudgment: row.legal_judgment as Property['legalJudgment'],
+    riskLevel: row.risk_level as Property['riskLevel'],
+    auctionDate: String(row.auction_date ?? ''),
+    status: String(row.status),
+    score: Number(row.score),
+    summary: String(row.summary),
+    tags: (row.tags as string[]) ?? [],
+    reportFile: String(row.report_file),
+    lat: row.lat != null ? Number(row.lat) : undefined,
+    lng: row.lng != null ? Number(row.lng) : undefined,
   }
-  if (!listRaw) return null
 
-  const properties: Property[] = JSON.parse(listRaw)
-  const property = properties.find((p) => p.caseNumber === caseNumber)
-
-  if (!property) return null
-
+  // 상세 리포트는 data/reports/ 파일에서 (기존 AI 분석 결과 유지)
   let report: PropertyReport | null = null
   try {
     const reportPath = path.join(process.cwd(), 'data', 'reports', property.reportFile)
