@@ -62,8 +62,16 @@ export async function createPaymentLink(
   })
 
   if (!response.ok) {
-    const errorBody = await response.text()
-    throw new Error(`포트원 결제 링크 생성 실패 (${response.status}): ${errorBody}`)
+    const errorBody = await response.text().catch(() => '')
+    const hint =
+      response.status === 404
+        ? ' [힌트: 채널 키가 올바른지 포트원 관리자 > 채널 관리에서 확인하세요]'
+        : response.status === 401
+        ? ' [힌트: PORTONE_API_SECRET이 올바른지 확인하세요]'
+        : ''
+    throw new Error(
+      `포트원 결제 링크 생성 실패 (${response.status})${errorBody ? ': ' + errorBody : ''}${hint}`
+    )
   }
 
   const data = await response.json()
