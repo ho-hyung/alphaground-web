@@ -11,6 +11,7 @@ import { CostBreakdown } from '@/components/CostBreakdown'
 import { PaywallGate } from '@/components/PaywallGate'
 import { AlertButton } from '@/components/AlertButton'
 import { ConsultButton } from '@/components/ConsultButton'
+import { CautionScreen } from '@/components/CautionScreen'
 import { formatCurrency, formatDate, formatArea } from '@/lib/format'
 import type { Property, PropertyReport, LegalCheck, RiskFactor } from '@/types/property'
 
@@ -228,7 +229,11 @@ export default async function PropertyDetailPage({ params }: PageProps) {
                   <span className="text-xs text-slate-500">AI 신뢰 점수</span>
                   <span
                     className={`text-sm font-bold ${
-                      report.legalAnalysis.score >= 70 ? 'text-emerald-400' : 'text-red-400'
+                      report.legalAnalysis.score >= 70
+                        ? 'text-emerald-400'
+                        : report.legalAnalysis.score >= 50
+                        ? 'text-amber-400'
+                        : 'text-red-400'
                     }`}
                   >
                     {report.legalAnalysis.score}/100
@@ -236,30 +241,41 @@ export default async function PropertyDetailPage({ params }: PageProps) {
                 </div>
               </div>
 
-              <p className="text-sm text-slate-300 leading-relaxed bg-slate-700/30 rounded-lg p-3 border border-slate-600/30">
-                {report.legalAnalysis.summary}
-              </p>
+              {/* CAUTION: 별도 화면으로 분기 */}
+              {report.legalAnalysis.judgment === 'CAUTION' ? (
+                <CautionScreen
+                  summary={report.legalAnalysis.summary}
+                  contradictions={report.legalAnalysis.contradictions}
+                  checklist={report.cautionChecklist}
+                />
+              ) : (
+                <>
+                  <p className="text-sm text-slate-300 leading-relaxed bg-slate-700/30 rounded-lg p-3 border border-slate-600/30">
+                    {report.legalAnalysis.summary}
+                  </p>
 
-              {report.legalAnalysis.riskFactors.length > 0 && (
-                <div className="space-y-2">
-                  <h3 className="text-sm font-semibold text-red-400 flex items-center gap-1">
-                    ⚠ 주요 위험 요소
-                  </h3>
-                  {report.legalAnalysis.riskFactors.map((factor, i) => (
-                    <RiskFactorRow key={i} factor={factor} />
-                  ))}
-                </div>
-              )}
+                  {report.legalAnalysis.riskFactors.length > 0 && (
+                    <div className="space-y-2">
+                      <h3 className="text-sm font-semibold text-red-400 flex items-center gap-1">
+                        ⚠ 주요 위험 요소
+                      </h3>
+                      {report.legalAnalysis.riskFactors.map((factor, i) => (
+                        <RiskFactorRow key={i} factor={factor} />
+                      ))}
+                    </div>
+                  )}
 
-              <div className="space-y-2">
-                <h3 className="text-sm font-semibold text-slate-300">항목별 검토 결과</h3>
-                {report.legalAnalysis.checks.map((check, i) => (
-                  <CheckRow key={i} check={check} />
-                ))}
-              </div>
+                  <div className="space-y-2">
+                    <h3 className="text-sm font-semibold text-slate-300">항목별 검토 결과</h3>
+                    {report.legalAnalysis.checks.map((check, i) => (
+                      <CheckRow key={i} check={check} />
+                    ))}
+                  </div>
 
-              {report.legalAnalysis.sourceDocuments && report.legalAnalysis.sourceDocuments.length > 0 && (
-                <SourceDocumentViewer documents={report.legalAnalysis.sourceDocuments} />
+                  {report.legalAnalysis.sourceDocuments && report.legalAnalysis.sourceDocuments.length > 0 && (
+                    <SourceDocumentViewer documents={report.legalAnalysis.sourceDocuments} />
+                  )}
+                </>
               )}
             </section>
 

@@ -8,8 +8,11 @@ interface Props {
 export function RoiBadge({ roi, judgment }: Props) {
   const isHigh = roi >= 30 && judgment === 'PASS'
   const isMedium = roi >= 15 && judgment === 'PASS'
+  const isCaution = judgment === 'CAUTION'
 
-  const colorClass = isHigh
+  const colorClass = isCaution
+    ? 'text-amber-400 bg-amber-500/10 opacity-70'
+    : isHigh
     ? 'text-emerald-400 bg-emerald-500/10'
     : isMedium
     ? 'text-amber-400 bg-amber-500/10'
@@ -17,6 +20,7 @@ export function RoiBadge({ roi, judgment }: Props) {
 
   return (
     <span className={`font-bold text-lg px-2 py-0.5 rounded ${colorClass}`}>
+      {isCaution && <span className="text-sm mr-0.5">~</span>}
       {roi.toFixed(1)}%
     </span>
   )

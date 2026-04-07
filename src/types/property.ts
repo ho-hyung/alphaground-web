@@ -1,4 +1,4 @@
-export type LegalJudgment = 'PASS' | 'FAIL'
+export type LegalJudgment = 'PASS' | 'FAIL' | 'CAUTION'
 export type RiskLevel = 'none' | 'low' | 'medium' | 'high' | 'critical'
 export type Region = '서울' | '경기' | '인천' | '기타'
 
@@ -39,6 +39,19 @@ export interface RiskFactor {
   severity: RiskLevel
 }
 
+export interface Contradiction {
+  docA: string
+  docB: string
+  issue: string
+  detail: string
+}
+
+export interface CautionCheckItem {
+  category: string
+  priority: 'critical' | 'high' | 'medium'
+  items: string[]
+}
+
 export interface LegalAnalysis {
   judgment: LegalJudgment
   score: number
@@ -46,6 +59,7 @@ export interface LegalAnalysis {
   checks: LegalCheck[]
   riskFactors: RiskFactor[]
   sourceDocuments?: SourceDocument[]
+  contradictions?: Contradiction[]
 }
 
 export interface LocationAnalysis {
@@ -75,6 +89,7 @@ export interface PropertyReport {
   legalAnalysis: LegalAnalysis
   locationAnalysis: LocationAnalysis
   profitAnalysis: ProfitAnalysis
+  cautionChecklist?: CautionCheckItem[]
 }
 
 export interface SourceDocument {

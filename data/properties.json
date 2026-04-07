@@ -130,5 +130,27 @@
     "reportFile": "2024타경67890.json",
     "lat": 37.5593,
     "lng": 126.8276
+  },
+  {
+    "id": "2024타경78901",
+    "caseNumber": "2024타경78901",
+    "region": "서울",
+    "district": "용산구",
+    "address": "서울시 용산구 이태원동 901-23",
+    "propertyType": "다가구주택",
+    "area": 198.4,
+    "minimumBid": 1650000000,
+    "estimatedValue": 2300000000,
+    "roi": 28.3,
+    "legalJudgment": "CAUTION",
+    "riskLevel": "high",
+    "auctionDate": "2024-06-12",
+    "status": "예정",
+    "score": 55,
+    "summary": "용산구 다가구주택. 등기부와 매각물건명세서 간 점유자 수 불일치 발견. AI 단독 판단 불가 — 현장 실사 필수.",
+    "tags": ["다가구", "서류모순", "실사필요"],
+    "reportFile": "2024타경78901.json",
+    "lat": 37.5347,
+    "lng": 126.9948
   }
 ]
