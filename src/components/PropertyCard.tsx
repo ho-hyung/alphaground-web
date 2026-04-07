@@ -12,15 +12,25 @@ interface Props {
   property: Property
 }
 
+const PREMIUM_SCORE_THRESHOLD = 90
+
 export function PropertyCard({ property }: Props) {
   const discountRate = (
     ((property.estimatedValue - property.minimumBid) / property.estimatedValue) *
     100
   ).toFixed(1)
+  const isPremium = property.score >= PREMIUM_SCORE_THRESHOLD
 
   return (
     <Link href={`/properties/${encodeURIComponent(property.caseNumber)}`}>
-      <Card className="bg-slate-800/60 border-slate-700/50 hover:border-slate-500/70 hover:bg-slate-800/90 transition-all duration-200 cursor-pointer group h-full">
+      <Card className="bg-slate-800/60 border-slate-700/50 hover:border-slate-500/70 hover:bg-slate-800/90 transition-all duration-200 cursor-pointer group h-full relative overflow-hidden">
+        {isPremium && (
+          <div className="absolute top-0 right-0">
+            <span className="inline-flex items-center gap-1 bg-gradient-to-r from-amber-500 to-yellow-400 text-black text-xs font-bold px-2.5 py-1 rounded-bl-lg">
+              ★ PREMIUM
+            </span>
+          </div>
+        )}
         <CardHeader className="pb-3">
           <div className="flex items-start justify-between gap-2">
             <div className="flex-1 min-w-0">
@@ -30,7 +40,9 @@ export function PropertyCard({ property }: Props) {
               </h3>
               <p className="text-xs text-slate-500 truncate mt-0.5">{property.address}</p>
             </div>
-            <JudgmentBadge judgment={property.legalJudgment} />
+            <div className={isPremium ? 'mt-6' : ''}>
+              <JudgmentBadge judgment={property.legalJudgment} />
+            </div>
           </div>
         </CardHeader>
         <CardContent className="space-y-3">

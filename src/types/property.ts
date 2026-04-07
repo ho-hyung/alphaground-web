@@ -17,6 +17,7 @@ export interface Property {
   riskLevel: RiskLevel
   auctionDate: string
   status: string
+  score: number
   summary: string
   tags: string[]
   reportFile: string
