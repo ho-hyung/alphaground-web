@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { createClient } from '@/lib/supabase/server'
+import { AuthButton } from '@/components/AuthButton'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -9,7 +11,10 @@ export const metadata: Metadata = {
   description: 'AI 권리분석과 수익성 예측으로 초과 수익을 찾아내는 부동산 경매 플랫폼',
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+
   return (
     <html lang="ko" className="dark">
       <body className={`${inter.className} bg-slate-950 text-slate-100 min-h-screen`}>
@@ -31,6 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 매물 목록
               </a>
               <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" title="실시간 분석 중" />
+              <AuthButton user={user} />
             </nav>
           </div>
         </header>
