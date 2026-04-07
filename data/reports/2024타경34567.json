@@ -1,0 +1,80 @@
+{
+  "caseNumber": "2024타경34567",
+  "analyzedAt": "2024-04-11T10:00:00Z",
+  "legalAnalysis": {
+    "judgment": "FAIL",
+    "score": 41,
+    "summary": "선순위 임차인의 대항력이 확인되어 낙찰자가 임차 보증금을 인수해야 합니다. 실질 수익률이 현저히 낮아져 투자 비추천.",
+    "checks": [
+      {
+        "category": "선순위임차",
+        "result": "FAIL",
+        "description": "전입일 2020-03-15, 확정일자 2020-03-16. 경매개시결정일 이전으로 대항력 있음. 보증금 3억 5천만원 인수 필요.",
+        "riskLevel": "critical"
+      },
+      {
+        "category": "가압류/압류",
+        "result": "PASS",
+        "description": "압류 2건은 경매 배당으로 소멸 처리 예정",
+        "riskLevel": "low"
+      },
+      {
+        "category": "유치권",
+        "result": "PASS",
+        "description": "유치권 신고 없음",
+        "riskLevel": "none"
+      },
+      {
+        "category": "법정지상권",
+        "result": "PASS",
+        "description": "아파트 단지로 법정지상권 해당 없음",
+        "riskLevel": "none"
+      },
+      {
+        "category": "명도리스크",
+        "result": "FAIL",
+        "description": "대항력 있는 임차인으로 명도 소송 장기화 가능성 있음. 예상 명도 기간 6~12개월.",
+        "riskLevel": "high"
+      }
+    ],
+    "riskFactors": [
+      {
+        "type": "선순위임차인 인수",
+        "amount": 350000000,
+        "description": "보증금 3억 5천만원 낙찰자 인수 확정",
+        "severity": "critical"
+      },
+      {
+        "type": "명도 소송 비용",
+        "amount": 5000000,
+        "description": "명도 소송 예상 비용 (변호사 비용 포함)",
+        "severity": "medium"
+      }
+    ]
+  },
+  "locationAnalysis": {
+    "score": 82,
+    "summary": "분당 정자동은 강남 접근성이 우수한 1기 신도시 핵심 지역입니다. 그러나 법적 리스크로 인한 투자 메리트 감소.",
+    "positiveFactors": [
+      "신분당선 정자역 도보 10분",
+      "판교 테크노밸리 근접 (직주근접)",
+      "분당 학군 우수 (초중고 모두 인접)"
+    ],
+    "negativeFactors": [
+      "1998년 준공 노후 아파트",
+      "재건축 연한 미도래로 단기 호재 없음",
+      "선순위 임차인으로 인한 추가 인수 비용 과다"
+    ],
+    "rentalYield": 3.2,
+    "appreciationForecast": "보합"
+  },
+  "profitAnalysis": {
+    "minimumBid": 1100000000,
+    "estimatedAcquisitionCost": 1500000000,
+    "marketValue": 1550000000,
+    "projectedProfit": 50000000,
+    "roi": 3.3,
+    "breakEvenMonths": 48,
+    "exitStrategy": "보증금 인수로 인해 즉시 매도 시 손실 가능. 장기 보유 필요."
+  }
+}

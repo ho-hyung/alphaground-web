@@ -1,0 +1,67 @@
+{
+  "caseNumber": "2024타경12345",
+  "analyzedAt": "2024-04-10T09:00:00Z",
+  "legalAnalysis": {
+    "judgment": "PASS",
+    "score": 92,
+    "summary": "해당 물건은 법적 권리관계가 명확하며, 선순위 임차인 없음이 확인되었습니다. 낙찰 후 즉시 명도 가능한 물건입니다.",
+    "checks": [
+      {
+        "category": "선순위임차",
+        "result": "PASS",
+        "description": "등기부등본 확인 결과 선순위 임차인 없음",
+        "riskLevel": "none"
+      },
+      {
+        "category": "가압류/압류",
+        "result": "PASS",
+        "description": "가압류 1건 존재하나 경매 배당으로 소멸 예정",
+        "riskLevel": "low"
+      },
+      {
+        "category": "유치권",
+        "result": "PASS",
+        "description": "유치권 신고 없음",
+        "riskLevel": "none"
+      },
+      {
+        "category": "법정지상권",
+        "result": "PASS",
+        "description": "건물과 토지 소유자 동일, 법정지상권 성립 가능성 없음",
+        "riskLevel": "none"
+      },
+      {
+        "category": "명도리스크",
+        "result": "PASS",
+        "description": "현재 공실 상태로 명도 절차 불필요",
+        "riskLevel": "none"
+      }
+    ],
+    "riskFactors": []
+  },
+  "locationAnalysis": {
+    "score": 88,
+    "summary": "역삼역 도보 5분의 강남구 핵심 입지입니다. 높은 임대 수요와 안정적인 시세 상승이 기대됩니다.",
+    "positiveFactors": [
+      "역삼역 도보 5분 거리 (2호선)",
+      "강남 업무지구 근접으로 임대 수요 풍부",
+      "해당 단지 최근 3년 평균 연 8% 시세 상승",
+      "우수한 학군 (역삼초, 개포중 인접)"
+    ],
+    "negativeFactors": [
+      "주차장 협소 (세대당 0.8대)",
+      "1998년 준공으로 노후 단지"
+    ],
+    "rentalYield": 3.8,
+    "appreciationForecast": "강세"
+  },
+  "profitAnalysis": {
+    "minimumBid": 850000000,
+    "estimatedAcquisitionCost": 900000000,
+    "marketValue": 1200000000,
+    "projectedProfit": 300000000,
+    "roi": 33.3,
+    "breakEvenMonths": 18,
+    "exitStrategy": "단기 매도 또는 임대 운영 모두 유리"
+  }
+}
