@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/update-properties",
+      "schedule": "0 2 * * *"
+    }
+  ]
+}
