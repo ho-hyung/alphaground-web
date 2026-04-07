@@ -20,8 +20,20 @@ interface PageProps {
 }
 
 async function getPropertyDetail(caseNumber: string) {
-  const listPath = path.join(process.cwd(), 'data', 'properties.json')
-  const listRaw = await readFile(listPath, 'utf-8')
+  // public/data/ 우선 (Vercel 정적 파일), 없으면 data/ 폴백
+  const listCandidates = [
+    path.join(process.cwd(), 'public', 'data', 'properties.json'),
+    path.join(process.cwd(), 'data', 'properties.json'),
+  ]
+  let listRaw = ''
+  for (const p of listCandidates) {
+    try {
+      listRaw = await readFile(p, 'utf-8')
+      break
+    } catch { /* 다음 경로 시도 */ }
+  }
+  if (!listRaw) return null
+
   const properties: Property[] = JSON.parse(listRaw)
   const property = properties.find((p) => p.caseNumber === caseNumber)
 
