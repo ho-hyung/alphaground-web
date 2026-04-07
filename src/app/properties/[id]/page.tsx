@@ -5,6 +5,9 @@ import path from 'path'
 import { Separator } from '@/components/ui/separator'
 import { Badge } from '@/components/ui/badge'
 import { JudgmentBadge } from '@/components/JudgmentBadge'
+import { SourceDocumentViewer } from '@/components/SourceDocumentViewer'
+import { PropertyMap } from '@/components/PropertyMap'
+import { CostBreakdown } from '@/components/CostBreakdown'
 import { formatCurrency, formatDate, formatArea } from '@/lib/format'
 import type { Property, PropertyReport, LegalCheck, RiskFactor } from '@/types/property'
 
@@ -126,6 +129,7 @@ export default async function PropertyDetailPage({ params }: PageProps) {
         <span className="font-mono">{property.caseNumber}</span>
       </div>
 
+      {/* 기본 정보 */}
       <div className="bg-slate-800/40 border border-slate-700/50 rounded-xl p-6">
         <div className="flex items-start justify-between gap-4 mb-4">
           <div>
@@ -200,6 +204,7 @@ export default async function PropertyDetailPage({ params }: PageProps) {
 
       {report ? (
         <>
+          {/* 법률 권리분석 */}
           <section className="bg-slate-800/40 border border-slate-700/50 rounded-xl p-6 space-y-4">
             <div className="flex items-center justify-between">
               <h2 className="text-base font-bold text-white flex items-center gap-2">
@@ -238,8 +243,14 @@ export default async function PropertyDetailPage({ params }: PageProps) {
                 <CheckRow key={i} check={check} />
               ))}
             </div>
+
+            {/* ① 근거 서류 뷰어 */}
+            {report.legalAnalysis.sourceDocuments && report.legalAnalysis.sourceDocuments.length > 0 && (
+              <SourceDocumentViewer documents={report.legalAnalysis.sourceDocuments} />
+            )}
           </section>
 
+          {/* 입지 분석 */}
           <section className="bg-slate-800/40 border border-slate-700/50 rounded-xl p-6 space-y-4">
             <div className="flex items-center justify-between">
               <h2 className="text-base font-bold text-white flex items-center gap-2">
@@ -256,6 +267,16 @@ export default async function PropertyDetailPage({ params }: PageProps) {
             <p className="text-sm text-slate-300 leading-relaxed bg-slate-700/30 rounded-lg p-3 border border-slate-600/30">
               {report.locationAnalysis.summary}
             </p>
+
+            {/* ② 지도 임베드 */}
+            {property.lat && property.lng && (
+              <PropertyMap
+                lat={property.lat}
+                lng={property.lng}
+                markers={report.locationAnalysis.mapMarkers}
+                address={property.address}
+              />
+            )}
 
             <div className="grid sm:grid-cols-2 gap-4">
               <div>
@@ -302,6 +323,7 @@ export default async function PropertyDetailPage({ params }: PageProps) {
             </div>
           </section>
 
+          {/* 수익성 분석 */}
           <section className="bg-slate-800/40 border border-slate-700/50 rounded-xl p-6 space-y-4">
             <h2 className="text-base font-bold text-white flex items-center gap-2">
               <span className="text-amber-400">💰</span> 수익성 분석
@@ -354,6 +376,14 @@ export default async function PropertyDetailPage({ params }: PageProps) {
                 </p>
               </div>
             </div>
+
+            {/* ③ 취득 비용 상세 내역 */}
+            {report.profitAnalysis.costBreakdown && report.profitAnalysis.costBreakdown.length > 0 && (
+              <CostBreakdown
+                totalCost={report.profitAnalysis.estimatedAcquisitionCost}
+                items={report.profitAnalysis.costBreakdown}
+              />
+            )}
 
             <div className="bg-slate-700/30 rounded-lg p-3 border border-slate-600/30">
               <p className="text-xs text-slate-500 mb-1">출구 전략 제안</p>

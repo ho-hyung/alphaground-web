@@ -37,7 +37,23 @@
         "riskLevel": "none"
       }
     ],
-    "riskFactors": []
+    "riskFactors": [],
+    "sourceDocuments": [
+      {
+        "docType": "등기부등본",
+        "docDate": "2024-04-09",
+        "excerpt": "【 을 구 】\n채권자 국민은행 / 근저당권설정\n채권최고액 금 312,000,000원\n설정일자 2010년 03월 15일\n\n임차권 등기 없음\n전세권 등기 없음",
+        "highlight": "임차권 등기 없음 / 전세권 등기 없음",
+        "relevance": "선순위임차권·전세권이 을구에 등기되어 있지 않아 대항력 있는 임차인 없음을 확인"
+      },
+      {
+        "docType": "매각물건명세서",
+        "docDate": "2024-04-01",
+        "excerpt": "5. 부동산의 점유관계 및 임차보증금·차임\n점유자: 채무자 본인 점유(공실)\n임차인 현황: 없음\n\n6. 주의사항\n해당 없음",
+        "highlight": "임차인 현황: 없음",
+        "relevance": "법원이 작성한 매각물건명세서에서 임차인 없음을 공식 확인"
+      }
+    ]
   },
   "locationAnalysis": {
     "score": 88,
@@ -53,7 +69,12 @@
       "1998년 준공으로 노후 단지"
     ],
     "rentalYield": 3.8,
-    "appreciationForecast": "강세"
+    "appreciationForecast": "강세",
+    "mapMarkers": [
+      { "label": "매물", "lat": 37.5007, "lng": 127.0366, "type": "property" },
+      { "label": "역삼역 (2호선)", "lat": 37.5006, "lng": 127.0385, "type": "subway" },
+      { "label": "강남구청", "lat": 37.5172, "lng": 127.0473, "type": "landmark" }
+    ]
   },
   "profitAnalysis": {
     "minimumBid": 850000000,
@@ -62,6 +83,14 @@
     "projectedProfit": 300000000,
     "roi": 33.3,
     "breakEvenMonths": 18,
-    "exitStrategy": "단기 매도 또는 임대 운영 모두 유리"
+    "exitStrategy": "단기 매도 또는 임대 운영 모두 유리",
+    "costBreakdown": [
+      { "item": "낙찰가 (예상)", "amount": 850000000, "note": "최저입찰가 기준" },
+      { "item": "취득세", "amount": 27200000, "note": "3.2% (1주택 기준)" },
+      { "item": "법무사 비용", "amount": 1500000, "note": "등기이전 수수료" },
+      { "item": "명도 비용", "amount": 0, "note": "공실이므로 불필요" },
+      { "item": "수리·인테리어 (예상)", "amount": 15000000, "note": "기본 수리 기준" },
+      { "item": "중개 수수료 (매도시)", "amount": 6000000, "note": "0.9% 상한" }
+    ]
   }
 }

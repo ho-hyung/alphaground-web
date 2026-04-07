@@ -20,6 +20,8 @@ export interface Property {
   summary: string
   tags: string[]
   reportFile: string
+  lat?: number
+  lng?: number
 }
 
 export interface LegalCheck {
@@ -42,6 +44,7 @@ export interface LegalAnalysis {
   summary: string
   checks: LegalCheck[]
   riskFactors: RiskFactor[]
+  sourceDocuments?: SourceDocument[]
 }
 
 export interface LocationAnalysis {
@@ -51,6 +54,7 @@ export interface LocationAnalysis {
   negativeFactors: string[]
   rentalYield: number
   appreciationForecast: string
+  mapMarkers?: MapMarker[]
 }
 
 export interface ProfitAnalysis {
@@ -61,6 +65,7 @@ export interface ProfitAnalysis {
   roi: number
   breakEvenMonths: number
   exitStrategy: string
+  costBreakdown?: CostItem[]
 }
 
 export interface PropertyReport {
@@ -69,6 +74,27 @@ export interface PropertyReport {
   legalAnalysis: LegalAnalysis
   locationAnalysis: LocationAnalysis
   profitAnalysis: ProfitAnalysis
+}
+
+export interface SourceDocument {
+  docType: string
+  docDate: string
+  excerpt: string
+  highlight: string
+  relevance: string
+}
+
+export interface MapMarker {
+  label: string
+  lat: number
+  lng: number
+  type: 'property' | 'subway' | 'landmark'
+}
+
+export interface CostItem {
+  item: string
+  amount: number
+  note: string
 }
 
 export interface PropertyFilters {

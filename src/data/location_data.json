@@ -1,0 +1,202 @@
+[
+  {
+    "case_id": "2025타경48291",
+    "address": "서울 노원구 중계동 (중계청구)",
+    "apartment_name": "중계청구아파트",
+    "legal_status": "PASS",
+    "expected_return_rate": 28.7,
+    "auction_date": "2026-04-10",
+    "coordinates": { "lat": 37.6529, "lng": 127.0722 },
+    "location_keywords": ["중계역 인근", "노원 학군 우수", "7호선 역세권", "은행사거리 생활권", "중계뉴타운 호재"]
+  },
+  {
+    "case_id": "2025타경52104",
+    "address": "서울 도봉구 창동 (도봉주공3단지)",
+    "apartment_name": "도봉주공3단지",
+    "legal_status": "PASS",
+    "expected_return_rate": 32.7,
+    "auction_date": "2026-04-11",
+    "coordinates": { "lat": 37.6540, "lng": 127.0466 },
+    "location_keywords": ["창동역 역세권", "창동상계 재개발", "환승센터 개발 호재", "서울 청년허브 인접", "1·4호선 복수 노선"]
+  },
+  {
+    "case_id": "2026타경11823",
+    "address": "인천 부평구 부평동 (부평현대)",
+    "apartment_name": "부평현대아파트",
+    "legal_status": "PASS",
+    "expected_return_rate": 17.1,
+    "auction_date": "2026-04-08",
+    "coordinates": { "lat": 37.4879, "lng": 126.7223 },
+    "location_keywords": ["부평역 도보권", "인천1호선 역세권", "경인선 이중 노선", "부평 상권 인접", "GTX-B 부평역 수혜"]
+  },
+  {
+    "case_id": "2025타경71234",
+    "address": "서울 강북구 미아동 (미아래미안)",
+    "apartment_name": "미아래미안아파트",
+    "legal_status": "PASS",
+    "expected_return_rate": 23.5,
+    "auction_date": "2026-04-09",
+    "coordinates": { "lat": 37.6395, "lng": 127.0275 },
+    "location_keywords": ["4호선 미아사거리역 인근", "강북구 재개발 수혜지", "미아 뉴타운 인접", "솔밭공원 인근", "수도권 북부 교통 요충지"]
+  },
+  {
+    "case_id": "2025타경83491",
+    "address": "경기 고양시 덕양구 능곡동 (능곡삼성)",
+    "apartment_name": "능곡삼성아파트",
+    "legal_status": "PASS",
+    "expected_return_rate": 36.6,
+    "auction_date": "2026-04-14",
+    "coordinates": { "lat": 37.6430, "lng": 126.8347 },
+    "location_keywords": ["GTX-A 능곡역 개통", "경의선 능곡역 역세권", "능곡재개발 진행", "72.5㎡ 실수요층 두터움", "고양시 덕양구 핵심 입지"]
+  },
+  {
+    "case_id": "2025타경94012",
+    "address": "서울 중랑구 상봉동 (상봉우성)",
+    "apartment_name": "상봉우성아파트",
+    "legal_status": "CAUTION",
+    "expected_return_rate": null,
+    "auction_date": "2026-04-12",
+    "coordinates": { "lat": 37.5960, "lng": 127.0933 },
+    "location_keywords": ["상봉터미널 인접", "7호선 면목역 도보권", "경춘선 상봉역 이중 노선", "강동~중랑 광역버스 요충지", "소액임차인 주의"]
+  },
+  {
+    "case_id": "2025타경56782",
+    "address": "서울 은평구 불광동 (불광미성)",
+    "apartment_name": "불광미성아파트",
+    "legal_status": "PASS",
+    "expected_return_rate": 30.5,
+    "auction_date": "2026-04-08",
+    "coordinates": { "lat": 37.6133, "lng": 126.9287 },
+    "location_keywords": ["GTX-A 연신내역 수혜", "3·6호선 불광역 인근", "서북권 재개발 수요 유입", "은평뉴타운 생활권", "84.7㎡ 학군 거주 수요"]
+  },
+  {
+    "case_id": "2026타경12847",
+    "address": "경기 의정부시 의정부동 (의정부한양)",
+    "apartment_name": "의정부한양아파트",
+    "legal_status": "PASS",
+    "expected_return_rate": 20.5,
+    "auction_date": "2026-04-09",
+    "coordinates": { "lat": 37.7376, "lng": 127.0485 },
+    "location_keywords": ["의정부 경전철 역세권", "1호선 의정부역 인근", "3차 유찰 할인 극대화", "의정부 중심 생활권", "GTX-C 의정부역 개발 호재"]
+  },
+  {
+    "case_id": "2025타경24918",
+    "address": "서울 노원구 공릉동 (공릉한신)",
+    "apartment_name": "공릉한신아파트",
+    "legal_status": "FAIL",
+    "expected_return_rate": null,
+    "auction_date": "2026-04-10",
+    "coordinates": { "lat": 37.6253, "lng": 127.0769 },
+    "location_keywords": ["7호선 공릉역 역세권", "서울과기대·육사 인근", "임대 수요 안정", "유치권 신고 위험", "노원구 학군 생활권"]
+  },
+  {
+    "case_id": "2025타경67320",
+    "address": "인천 남동구 구월동 (구월롯데)",
+    "apartment_name": "구월롯데아파트",
+    "legal_status": "PASS",
+    "expected_return_rate": 18.5,
+    "auction_date": "2026-04-11",
+    "coordinates": { "lat": 37.4552, "lng": 126.7320 },
+    "location_keywords": ["인천시청 인근", "수인분당선 인천시청역", "구월동 상업지구 인접", "롯데백화점 생활권", "남동구 행정 중심지"]
+  },
+  {
+    "case_id": "2025타경38756",
+    "address": "서울 강서구 화곡동 (화곡본동우성)",
+    "apartment_name": "화곡본동우성아파트",
+    "legal_status": "FAIL",
+    "expected_return_rate": null,
+    "auction_date": "2026-04-09",
+    "coordinates": { "lat": 37.5504, "lng": 126.8490 },
+    "location_keywords": ["5호선 화곡역 역세권", "마곡지구 수혜권", "김포공항 인접", "강서구 업무 수요", "선순위 임차인 인수 위험"]
+  },
+  {
+    "case_id": "2026타경14591",
+    "address": "경기 부천시 원미구 중동 (부천한양)",
+    "apartment_name": "부천한양아파트",
+    "legal_status": "CAUTION",
+    "expected_return_rate": null,
+    "auction_date": "2026-04-12",
+    "coordinates": { "lat": 37.5041, "lng": 126.7656 },
+    "location_keywords": ["7호선 부천시청역 인근", "경인선 이중 노선", "3차 유찰 할인", "부천 중동 신시가지", "GTX-B 부천역 개발 호재"]
+  },
+  {
+    "case_id": "2025타경88234",
+    "address": "서울 도봉구 방학동 (방학현대)",
+    "apartment_name": "방학현대아파트",
+    "legal_status": "PASS",
+    "expected_return_rate": 23.6,
+    "auction_date": "2026-04-12",
+    "coordinates": { "lat": 37.6680, "lng": 127.0365 },
+    "location_keywords": ["1호선 방학역 역세권", "도봉구 재건축 기대", "방학천 자연환경", "서울 최북단 입지", "경기 북부 출퇴근 수요"]
+  },
+  {
+    "case_id": "2025타경71048",
+    "address": "경기 수원시 팔달구 매탄동 (매탄위브)",
+    "apartment_name": "매탄위브아파트",
+    "legal_status": "PASS",
+    "expected_return_rate": 21.6,
+    "auction_date": "2026-04-14",
+    "coordinates": { "lat": 37.2720, "lng": 127.0549 },
+    "location_keywords": ["매탄권선역 역세권", "광교신도시 인접", "삼성전자 수원사업장 출퇴근권", "수원 팔달구 중심", "GTX-A 수원역 수혜"]
+  },
+  {
+    "case_id": "2026타경09128",
+    "address": "인천 미추홀구 주안동 (주안극동)",
+    "apartment_name": "주안극동아파트",
+    "legal_status": "FAIL",
+    "expected_return_rate": null,
+    "auction_date": "2026-04-11",
+    "coordinates": { "lat": 37.4720, "lng": 126.6861 },
+    "location_keywords": ["1호선 주안역 역세권", "4차 유찰 대폭 할인", "인천 원도심 재개발", "법정지상권 위험", "주안 재생사업 인접"]
+  },
+  {
+    "case_id": "2025타경55921",
+    "address": "서울 중랑구 면목동 (면목대우)",
+    "apartment_name": "면목대우아파트",
+    "legal_status": "PASS",
+    "expected_return_rate": 25.3,
+    "auction_date": "2026-04-13",
+    "coordinates": { "lat": 37.5828, "lng": 127.0847 },
+    "location_keywords": ["7호선 면목역 역세권", "면목선 경전철 예정", "중랑구 재개발 수혜", "3차 유찰 할인", "동서울 생활권"]
+  },
+  {
+    "case_id": "2026타경08273",
+    "address": "경기 안산시 단원구 고잔동 (고잔삼성)",
+    "apartment_name": "고잔삼성아파트",
+    "legal_status": "CAUTION",
+    "expected_return_rate": null,
+    "auction_date": "2026-04-13",
+    "coordinates": { "lat": 37.3235, "lng": 126.8338 },
+    "location_keywords": ["4호선 고잔역 역세권", "안산선 이용 편의", "시화MTV 개발 수혜권", "안산 신도시 중심", "위반건축물 이행강제금 주의"]
+  },
+  {
+    "case_id": "2025타경79345",
+    "address": "서울 강북구 번동 (번동삼익)",
+    "apartment_name": "번동삼익아파트",
+    "legal_status": "PASS",
+    "expected_return_rate": 21.4,
+    "auction_date": "2026-04-15",
+    "coordinates": { "lat": 37.6385, "lng": 127.0217 },
+    "location_keywords": ["4호선 미아사거리역 도보권", "강북구 재개발 수혜", "수유리 생활권", "3차 유찰 할인", "서울 북부 실수요 강세"]
+  },
+  {
+    "case_id": "2026타경13847",
+    "address": "경기 고양시 일산동구 마두동 (강촌마을)",
+    "apartment_name": "강촌마을아파트",
+    "legal_status": "FAIL",
+    "expected_return_rate": null,
+    "auction_date": "2026-04-14",
+    "coordinates": { "lat": 37.6565, "lng": 126.7746 },
+    "location_keywords": ["3호선 마두역 역세권", "일산 신도시 중심", "킨텍스·라페스타 생활권", "GTX-A 일산 수혜권", "처분금지가처분 위험"]
+  },
+  {
+    "case_id": "2025타경92841",
+    "address": "경기 시흥시 정왕동 (정왕엘지빌)",
+    "apartment_name": "정왕엘지빌아파트",
+    "legal_status": "PASS",
+    "expected_return_rate": 16.8,
+    "auction_date": "2026-04-15",
+    "coordinates": { "lat": 37.3465, "lng": 126.7296 },
+    "location_keywords": ["4호선 정왕역 역세권", "시화MTV 첨단산업단지", "배곧신도시 생활권", "3차 유찰 초저가 진입", "시흥 스마트허브 배후"]
+  }
+]
