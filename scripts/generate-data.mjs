@@ -140,7 +140,14 @@ async function main() {
   const inputPath = inputIdx !== -1 ? args[inputIdx + 1] : DEFAULT_INPUT
 
   if (!existsSync(inputPath)) {
-    console.error(`[generate-data] 입력 파일을 찾을 수 없습니다: ${inputPath}`)
+    // Vercel 등 CI 환경에서 pipeline 폴더가 없을 수 있음
+    // 이미 public/data/properties.json이 있으면 그대로 사용하고 정상 종료
+    if (existsSync(OUTPUT_FILE)) {
+      console.log(`[generate-data] 입력 파일 없음 (${inputPath})`)
+      console.log(`[generate-data] ✅ 기존 ${OUTPUT_FILE} 사용 — 스킵`)
+      return
+    }
+    console.error(`[generate-data] 입력 파일도 없고 기존 데이터도 없습니다: ${inputPath}`)
     console.error('  --input <경로> 옵션으로 직접 지정하거나')
     console.error('  pipeline/alpha_report.json 파일이 있는지 확인하세요.')
     process.exit(1)
