@@ -21,7 +21,11 @@ import { createClient } from '@supabase/supabase-js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ROOT = path.join(__dirname, '..')
-const INPUT_PATH = path.join(ROOT, '..', 'pipeline', 'alpha_report.json')
+// 파이프라인 원본 데이터 경로 (repo root 기준 ../pipeline/ 또는 ./pipeline/)
+const PIPELINE_PATHS = [
+  path.join(ROOT, '..', 'pipeline', 'alpha_report.json'), // repo root 바깥 pipeline/
+  path.join(ROOT, 'pipeline', 'alpha_report.json'),        // repo root 안 pipeline/
+]
 
 // ─── 환경 변수 확인 ───────────────────────────────
 
@@ -144,12 +148,17 @@ function transform(raw) {
 // ─── 메인 ────────────────────────────────────────
 
 async function main() {
-  if (!existsSync(INPUT_PATH)) {
-    console.error(`❌ 파이프라인 데이터 없음: ${INPUT_PATH}`)
-    process.exit(1)
+  const inputPath = PIPELINE_PATHS.find(existsSync)
+
+  if (!inputPath) {
+    console.log('⚠️  파이프라인 데이터 없음 — Supabase 시드 스킵')
+    PIPELINE_PATHS.forEach((p) => console.log(`  확인 경로: ${p}`))
+    console.log('  (pipeline/alpha_report.json이 있을 때만 업데이트됩니다)')
+    process.exit(0)
   }
 
-  const raw = JSON.parse(await readFile(INPUT_PATH, 'utf-8'))
+  console.log(`📂 파이프라인 데이터 로드: ${inputPath}`)
+  const raw = JSON.parse(await readFile(inputPath, 'utf-8'))
   const records = Array.isArray(raw) ? raw : (raw.properties ?? [])
 
   // 중복 제거
