@@ -1,0 +1,97 @@
+{
+  "caseNumber": "2025타경102366",
+  "analyzedAt": "2026-04-07T02:14:55.628Z",
+  "_source": "auto-generated",
+  "_note": "ALP-27 법률 분석가 상세 리포트 생성 전 임시 자동 분석",
+  "legalAnalysis": {
+    "judgment": "CAUTION",
+    "score": 80,
+    "summary": "주의 필요 물건. 유찰 6회 물건으로 입찰 전 현장 확인 필수.",
+    "checks": [
+      {
+        "category": "말소기준권리 확인",
+        "result": "PASS",
+        "description": "말소기준권리 확인 필요. 등기부 열람 후 전문가 검토 권장.",
+        "riskLevel": "none"
+      },
+      {
+        "category": "선순위 임차인 여부",
+        "result": "PASS",
+        "description": "현황조사서상 선순위 임차인 미확인.",
+        "riskLevel": "none"
+      },
+      {
+        "category": "유치권 신고 여부",
+        "result": "PASS",
+        "description": "유치권 신고 없음.",
+        "riskLevel": "none"
+      },
+      {
+        "category": "법정지상권 성립 가능성",
+        "result": "PASS",
+        "description": "토지·건물 소유관계 확인 권장.",
+        "riskLevel": "low"
+      },
+      {
+        "category": "다회유찰 리스크",
+        "result": "PASS",
+        "description": "유찰 6회. 입찰 기피 이유 확인 필요.",
+        "riskLevel": "medium"
+      }
+    ],
+    "riskFactors": [
+      {
+        "type": "다회유찰 주의",
+        "amount": 104858000,
+        "description": "6회 유찰로 최저가 대폭 감소. 타 입찰자 기피 원인 반드시 확인.",
+        "severity": "medium"
+      }
+    ]
+  },
+  "locationAnalysis": {
+    "score": 61,
+    "summary": "서울 서울특별시 소재 연립주택,다세대,빌라. 인근 관악산휴먼시아2단지 실거래가 기준 시세 확인 가능.",
+    "positiveFactors": [
+      "서울 서울특별시 위치",
+      "인근 실거래 7억 수준 (2026-04-04)",
+      "인근 단지: 관악산휴먼시아2단지"
+    ],
+    "negativeFactors": [
+      "다회유찰로 현장 답사 필수",
+      "면적 정보 미확인 — 등기부 열람 필요"
+    ],
+    "rentalYield": 3,
+    "appreciationForecast": "서울 주택 수요 지속으로 중기 시세 상승 기대"
+  },
+  "profitAnalysis": {
+    "minimumBid": 104858000,
+    "estimatedAcquisitionCost": 122957552,
+    "marketValue": 320000000,
+    "projectedProfit": 197042448,
+    "roi": 160.3,
+    "breakEvenMonths": 7,
+    "exitStrategy": "즉시 매도(Flip) 전략. 감정가 대비 대폭 할인으로 낙찰 후 시장가 매도 시 높은 수익 기대.",
+    "costBreakdown": [
+      {
+        "item": "추정 낙찰가",
+        "amount": 115343800,
+        "note": "최저입찰가 × 1.1 가정"
+      },
+      {
+        "item": "취득세 (3.5%)",
+        "amount": 4037033,
+        "note": "주택 기준"
+      },
+      {
+        "item": "등기·법무 비용",
+        "amount": 576719,
+        "note": "개략 추정"
+      },
+      {
+        "item": "명도비용",
+        "amount": 3000000,
+        "note": "점유자 협의 비용 예상"
+      }
+    ]
+  }
+}

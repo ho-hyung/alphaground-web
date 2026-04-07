@@ -1,0 +1,95 @@
+{
+  "caseNumber": "2023타경114490",
+  "analyzedAt": "2026-04-07T02:14:55.631Z",
+  "_source": "auto-generated",
+  "_note": "ALP-27 법률 분석가 상세 리포트 생성 전 임시 자동 분석",
+  "legalAnalysis": {
+    "judgment": "PASS",
+    "score": 62,
+    "summary": "권리분석 결과 PASS 판정. 특이사항 없음. 매각물건명세서 확인 권장.",
+    "checks": [
+      {
+        "category": "말소기준권리 확인",
+        "result": "PASS",
+        "description": "최선순위 근저당권 설정 확인. 이후 권리 모두 말소 예정.",
+        "riskLevel": "none"
+      },
+      {
+        "category": "선순위 임차인 여부",
+        "result": "PASS",
+        "description": "현황조사서상 선순위 임차인 미확인.",
+        "riskLevel": "none"
+      },
+      {
+        "category": "유치권 신고 여부",
+        "result": "PASS",
+        "description": "유치권 신고 없음.",
+        "riskLevel": "none"
+      },
+      {
+        "category": "법정지상권 성립 가능성",
+        "result": "PASS",
+        "description": "토지·건물 소유관계 확인 권장.",
+        "riskLevel": "low"
+      },
+      {
+        "category": "다회유찰 리스크",
+        "result": "PASS",
+        "description": "유찰 없음. 첫 경매 진행.",
+        "riskLevel": "low"
+      }
+    ],
+    "riskFactors": [
+      {
+        "type": "낙찰가율 높음",
+        "description": "감정가 대비 최저입찰가 비율이 높아 수익 마진이 제한적일 수 있음.",
+        "severity": "low"
+      }
+    ]
+  },
+  "locationAnalysis": {
+    "score": 77,
+    "summary": "서울 서울특별시 소재 다세대. 인근 현대(관악) 실거래가 기준 시세 확인 가능.",
+    "positiveFactors": [
+      "서울 서울특별시 위치",
+      "인근 실거래 10억 수준 (2026-04-06)",
+      "인근 단지: 현대(관악)"
+    ],
+    "negativeFactors": [
+      "면적 정보 미확인 — 등기부 열람 필요"
+    ],
+    "rentalYield": 2.6,
+    "appreciationForecast": "서울 주택 수요 지속으로 중기 시세 상승 기대"
+  },
+  "profitAnalysis": {
+    "minimumBid": 307000000,
+    "estimatedAcquisitionCost": 354208000,
+    "marketValue": 307000000,
+    "projectedProfit": -47208000,
+    "roi": -13.3,
+    "breakEvenMonths": 0,
+    "exitStrategy": "장기 보유 전략. 지역 개발 호재 및 시세 상승 모니터링.",
+    "costBreakdown": [
+      {
+        "item": "추정 낙찰가",
+        "amount": 337700000,
+        "note": "최저입찰가 × 1.1 가정"
+      },
+      {
+        "item": "취득세 (3.5%)",
+        "amount": 11819500,
+        "note": "주택 기준"
+      },
+      {
+        "item": "등기·법무 비용",
+        "amount": 1688500,
+        "note": "개략 추정"
+      },
+      {
+        "item": "명도비용",
+        "amount": 3000000,
+        "note": "점유자 협의 비용 예상"
+      }
+    ]
+  }
+}
