@@ -6,9 +6,18 @@ import { FilterBar } from '@/components/FilterBar'
 import type { Property } from '@/types/property'
 
 async function getProperties(searchParams: Record<string, string | string[] | undefined>) {
-  const dataPath = path.join(process.cwd(), 'data', 'properties.json')
-  const raw = await readFile(dataPath, 'utf-8')
-  let properties: Property[] = JSON.parse(raw)
+  const candidates = [
+    path.join(process.cwd(), 'public', 'data', 'properties.json'),
+    path.join(process.cwd(), 'data', 'properties.json'),
+  ]
+  let raw = ''
+  for (const p of candidates) {
+    try {
+      raw = await readFile(p, 'utf-8')
+      break
+    } catch { /* 다음 경로 시도 */ }
+  }
+  let properties: Property[] = raw ? JSON.parse(raw) : []
 
   const region = typeof searchParams.region === 'string' ? searchParams.region : 'all'
   const minRoi = parseFloat(typeof searchParams.minRoi === 'string' ? searchParams.minRoi : '0')
