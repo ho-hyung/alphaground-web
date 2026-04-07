@@ -1,0 +1,59 @@
+name: Update Property Data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'pipeline/alpha_report.json'
+      - 'scripts/generate-data.mjs'
+      - 'scripts/seed-supabase.mjs'
+  schedule:
+    - cron: '0 1 * * *'   # 매일 오전 10시 KST (UTC 01:00)
+  workflow_dispatch:        # 수동 트리거 가능
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          cd alphaground-dashboard
+          npm ci --ignore-scripts
+
+      - name: Generate public/data/properties.json
+        run: |
+          cd alphaground-dashboard
+          node scripts/generate-data.mjs
+
+      - name: Seed Supabase properties table
+        env:
+          SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          cd alphaground-dashboard
+          if [ -n "$SUPABASE_URL" ] && [ -n "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            node scripts/seed-supabase.mjs
+          else
+            echo "Supabase 환경변수 없음 — DB 시드 스킵"
+          fi
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add alphaground-dashboard/public/data/properties.json
+          git diff --staged --quiet || git commit -m "chore: update property data [skip ci]
+
+Co-Authored-By: Paperclip <noreply@paperclip.ing>"
+          git push
