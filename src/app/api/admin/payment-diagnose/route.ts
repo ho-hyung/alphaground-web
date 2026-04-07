@@ -15,7 +15,6 @@ export async function GET(request: NextRequest) {
 
   const checks: Record<string, string> = {}
 
-  // 환경변수 존재 여부 확인 (값은 노출하지 않음)
   const envVars = [
     'PORTONE_API_SECRET',
     'PORTONE_CHANNEL_KEY',
@@ -35,34 +34,60 @@ export async function GET(request: NextRequest) {
     } else if (val.includes('...') || val === 'your-secret-here' || val.includes('<')) {
       checks[key] = '⚠️ 플레이스홀더 값 (실제 값으로 교체 필요)'
     } else {
-      checks[key] = `✅ 설정됨 (${val.substring(0, 6)}...)`
+      checks[key] = `✅ 설정됨 (${val.substring(0, 8)}...)`
     }
   }
 
-  // 포트원 API 연결 테스트 (결제 조회로 확인)
-  let portoneStatus = '미확인'
+  // ── 포트원 결제링크 API 직접 호출 테스트 ────────────
+  let paymentLinkTest: Record<string, unknown> = { status: '미실행' }
   const apiSecret = process.env.PORTONE_API_SECRET
-  if (apiSecret && !apiSecret.includes('...')) {
+  const channelKey = process.env.PORTONE_CHANNEL_KEY
+  const storeId = process.env.PORTONE_STORE_ID
+
+  if (apiSecret && channelKey && !apiSecret.includes('...') && !channelKey.includes('...')) {
+    const body: Record<string, unknown> = {
+      channelKey,
+      orderName: '[진단용] 테스트 결제',
+      amount: { total: 1000, currency: 'KRW' },
+      customer: { email: 'diagnose@test.com' },
+      expiresAt: new Date(Date.now() + 60 * 60 * 1000).toISOString(), // 1시간 후
+    }
+    if (storeId) body.storeId = storeId
+
     try {
-      const res = await fetch('https://api.portone.io/payments/test-connection-check', {
-        headers: { Authorization: `PortOne ${apiSecret}` },
+      const res = await fetch('https://api.portone.io/payment-links', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `PortOne ${apiSecret}`,
+        },
+        body: JSON.stringify(body),
       })
-      // 404면 엔드포인트 없음이지만 인증은 됨, 401/403이면 키 오류
-      if (res.status === 401 || res.status === 403) {
-        portoneStatus = `❌ 인증 실패 (${res.status}) — PORTONE_API_SECRET 확인 필요`
-      } else {
-        portoneStatus = `✅ API 연결 가능 (HTTP ${res.status})`
+
+      const rawText = await res.text().catch(() => '')
+      let parsedBody: unknown = rawText
+      try { parsedBody = JSON.parse(rawText) } catch { /* keep raw */ }
+
+      paymentLinkTest = {
+        httpStatus: res.status,
+        ok: res.ok,
+        responseBody: parsedBody,
+        requestBody: { ...body, channelKey: channelKey.substring(0, 20) + '...' },
       }
     } catch (e) {
-      portoneStatus = `❌ 네트워크 오류: ${e instanceof Error ? e.message : String(e)}`
+      paymentLinkTest = { error: e instanceof Error ? e.message : String(e) }
     }
   } else {
-    portoneStatus = '⚠️ PORTONE_API_SECRET 미설정으로 테스트 불가'
+    paymentLinkTest = { status: '⚠️ PORTONE_API_SECRET 또는 PORTONE_CHANNEL_KEY 미설정' }
   }
 
   return NextResponse.json({
     envVars: checks,
-    portoneApiStatus: portoneStatus,
-    note: '채널 키 404 오류 시: ① 채널 키 확인 (포트원 관리자 > 채널 관리, "channel-key-{uuid}" 형식) ② 복수 스토어 계정이면 PORTONE_STORE_ID 환경변수 추가 필요 (포트원 관리자 > 상점 정보에서 "store-{uuid}" 형식 확인)',
+    paymentLinkTest,
+    tips: [
+      '404: 채널이 결제링크를 지원하지 않거나 channelKey가 올바르지 않음',
+      '401/403: PORTONE_API_SECRET이 v2 API 시크릿인지 확인 (포트원 관리자 > 상점 정보 > API Keys > V2 API Secret)',
+      '422: 요청 파라미터 오류 (responseBody에서 상세 확인)',
+    ],
   })
 }
