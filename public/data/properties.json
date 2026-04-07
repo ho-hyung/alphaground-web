@@ -33,7 +33,7 @@
       "dong": "신당동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.420Z",
+    "generatedAt": "2026-04-07T01:33:30.387Z",
     "_rank": 1
   },
   {
@@ -72,7 +72,7 @@
       "dong": "숭인동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.421Z",
+    "generatedAt": "2026-04-07T01:33:30.388Z",
     "_rank": 2
   },
   {
@@ -112,7 +112,7 @@
       "dong": "신림동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.421Z",
+    "generatedAt": "2026-04-07T01:33:30.388Z",
     "_rank": 3
   },
   {
@@ -151,7 +151,7 @@
       "dong": "상도1동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.421Z",
+    "generatedAt": "2026-04-07T01:33:30.388Z",
     "_rank": 4
   },
   {
@@ -190,7 +190,7 @@
       "dong": "신림동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.421Z",
+    "generatedAt": "2026-04-07T01:33:30.388Z",
     "_rank": 5
   },
   {
@@ -229,7 +229,7 @@
       "dong": "사당동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.421Z",
+    "generatedAt": "2026-04-07T01:33:30.388Z",
     "_rank": 6
   },
   {
@@ -268,7 +268,7 @@
       "dong": "상도동"
     },
     "specialNotes": "제시외 건물 포함",
-    "generatedAt": "2026-04-07T01:29:14.421Z",
+    "generatedAt": "2026-04-07T01:33:30.388Z",
     "_rank": 7
   },
   {
@@ -307,7 +307,7 @@
       "dong": "양재동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.421Z",
+    "generatedAt": "2026-04-07T01:33:30.388Z",
     "_rank": 8
   },
   {
@@ -346,7 +346,7 @@
       "dong": "봉천동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.421Z",
+    "generatedAt": "2026-04-07T01:33:30.388Z",
     "_rank": 9
   },
   {
@@ -383,45 +383,8 @@
       "dong": "봉천동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
+    "generatedAt": "2026-04-07T01:33:30.389Z",
     "_rank": 10
-  },
-  {
-    "id": "2024타경109389",
-    "caseNumber": "2024타경109389",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 관악구 봉천동 14-96",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 134144000,
-    "estimatedValue": 990000000,
-    "roi": 570.9,
-    "legalJudgment": "PASS",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-07",
-    "status": "예정",
-    "score": 79,
-    "summary": "서울중앙지방법원. 감정가 대비 51.2% 유찰 4회.",
-    "tags": [
-      "권리안정"
-    ],
-    "reportFile": "2024타경109389.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 262000000,
-    "estimatedBid": 147558400,
-    "failedAuctions": 4,
-    "nearbyTrade": {
-      "apt_nm": "현대(관악)",
-      "deal_amount_만원": "99000",
-      "deal_date": "2026-04-06",
-      "area_sqm": "116.86",
-      "floor": "13",
-      "dong": "봉천동"
-    },
-    "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 11
   },
   {
     "id": "2025타경102337",
@@ -459,8 +422,8 @@
       "dong": "신림동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 12
+    "generatedAt": "2026-04-07T01:33:30.389Z",
+    "_rank": 11
   },
   {
     "id": "2025타경102076",
@@ -496,8 +459,8 @@
       "dong": "상도동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 13
+    "generatedAt": "2026-04-07T01:33:30.389Z",
+    "_rank": 12
   },
   {
     "id": "2025타경102366",
@@ -535,45 +498,8 @@
       "dong": "신림동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 14
-  },
-  {
-    "id": "2025타경102076",
-    "caseNumber": "2025타경102076",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 동작구 상도동 301-28 (푸른주택)",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 279000000,
-    "estimatedValue": 1800000000,
-    "roi": 486.5,
-    "legalJudgment": "PASS",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 74,
-    "summary": "서울중앙지방법원. 감정가 대비 100%",
-    "tags": [
-      "권리안정"
-    ],
-    "reportFile": "2025타경102076.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 279000000,
-    "estimatedBid": 306900000,
-    "failedAuctions": 0,
-    "nearbyTrade": {
-      "apt_nm": "힐스테이트 상도 프레스티지",
-      "deal_amount_만원": "180000",
-      "deal_date": "2026-03-31",
-      "area_sqm": "84.884",
-      "floor": "11",
-      "dong": "상도동"
-    },
-    "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 15
+    "generatedAt": "2026-04-07T01:33:30.389Z",
+    "_rank": 13
   },
   {
     "id": "2023타경114094",
@@ -609,8 +535,8 @@
       "dong": "신림동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 16
+    "generatedAt": "2026-04-07T01:33:30.389Z",
+    "_rank": 14
   },
   {
     "id": "2025타경100105",
@@ -648,8 +574,8 @@
       "dong": "오장동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 17
+    "generatedAt": "2026-04-07T01:33:30.389Z",
+    "_rank": 15
   },
   {
     "id": "2025타경101061",
@@ -685,8 +611,8 @@
       "dong": "논현동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 18
+    "generatedAt": "2026-04-07T01:33:30.389Z",
+    "_rank": 16
   },
   {
     "id": "2023타경114490",
@@ -722,82 +648,8 @@
       "dong": "봉천동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 19
-  },
-  {
-    "id": "2023타경114490",
-    "caseNumber": "2023타경114490",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 관악구 봉천동 1622-23 (샤롯캐슬)",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 339000000,
-    "estimatedValue": 990000000,
-    "roi": 165.5,
-    "legalJudgment": "PASS",
-    "riskLevel": "low",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 58,
-    "summary": "서울중앙지방법원. 감정가 대비 100%",
-    "tags": [
-      "권리안정"
-    ],
-    "reportFile": "2023타경114490.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 339000000,
-    "estimatedBid": 372900000,
-    "failedAuctions": 0,
-    "nearbyTrade": {
-      "apt_nm": "현대(관악)",
-      "deal_amount_만원": "99000",
-      "deal_date": "2026-04-06",
-      "area_sqm": "116.86",
-      "floor": "13",
-      "dong": "봉천동"
-    },
-    "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 20
-  },
-  {
-    "id": "2023타경114490",
-    "caseNumber": "2023타경114490",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 관악구 봉천동 1622-23 (샤롯캐슬)",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 339000000,
-    "estimatedValue": 990000000,
-    "roi": 165.5,
-    "legalJudgment": "PASS",
-    "riskLevel": "low",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 58,
-    "summary": "서울중앙지방법원. 감정가 대비 100%",
-    "tags": [
-      "권리안정"
-    ],
-    "reportFile": "2023타경114490.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 339000000,
-    "estimatedBid": 372900000,
-    "failedAuctions": 0,
-    "nearbyTrade": {
-      "apt_nm": "현대(관악)",
-      "deal_amount_만원": "99000",
-      "deal_date": "2026-04-06",
-      "area_sqm": "116.86",
-      "floor": "13",
-      "dong": "봉천동"
-    },
-    "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 21
+    "generatedAt": "2026-04-07T01:33:30.389Z",
+    "_rank": 17
   },
   {
     "id": "2025타경100631",
@@ -834,8 +686,8 @@
       "dong": "신림동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 22
+    "generatedAt": "2026-04-07T01:33:30.389Z",
+    "_rank": 18
   },
   {
     "id": "2025타경100648",
@@ -872,45 +724,8 @@
       "dong": "신림동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 23
-  },
-  {
-    "id": "2023타경114490",
-    "caseNumber": "2023타경114490",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 관악구 봉천동 1622-23 (샤롯캐슬)",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 374000000,
-    "estimatedValue": 990000000,
-    "roi": 140.6,
-    "legalJudgment": "PASS",
-    "riskLevel": "low",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 57,
-    "summary": "서울중앙지방법원. 감정가 대비 100%",
-    "tags": [
-      "권리안정"
-    ],
-    "reportFile": "2023타경114490.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 374000000,
-    "estimatedBid": 411400000,
-    "failedAuctions": 0,
-    "nearbyTrade": {
-      "apt_nm": "현대(관악)",
-      "deal_amount_만원": "99000",
-      "deal_date": "2026-04-06",
-      "area_sqm": "116.86",
-      "floor": "13",
-      "dong": "봉천동"
-    },
-    "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 24
+    "generatedAt": "2026-04-07T01:33:30.389Z",
+    "_rank": 19
   },
   {
     "id": "2025타경102220",
@@ -947,8 +762,8 @@
       "dong": "신대방동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 25
+    "generatedAt": "2026-04-07T01:33:30.389Z",
+    "_rank": 20
   },
   {
     "id": "2025타경100488",
@@ -984,8 +799,8 @@
       "dong": "청담동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 26
+    "generatedAt": "2026-04-07T01:33:30.389Z",
+    "_rank": 21
   },
   {
     "id": "2023타경6278",
@@ -1022,8 +837,8 @@
       "dong": "도곡동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 27
+    "generatedAt": "2026-04-07T01:33:30.389Z",
+    "_rank": 22
   },
   {
     "id": "2025타경2416",
@@ -1060,8 +875,8 @@
       "dong": "청담동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 28
+    "generatedAt": "2026-04-07T01:33:30.389Z",
+    "_rank": 23
   },
   {
     "id": "2024타경120980",
@@ -1098,8 +913,8 @@
       "dong": "상도1동"
     },
     "specialNotes": "",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 29
+    "generatedAt": "2026-04-07T01:33:30.389Z",
+    "_rank": 24
   },
   {
     "id": "2021타경105850",
@@ -1137,787 +952,7 @@
       "dong": "잠원동"
     },
     "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 30
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 31
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 32
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 33
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 34
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 35
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 36
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 37
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 38
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 39
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 40
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 41
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 42
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 43
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 44
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 45
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 46
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 47
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 48
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 49
-  },
-  {
-    "id": "2021타경105850",
-    "caseNumber": "2021타경105850",
-    "region": "서울",
-    "district": "서울특별시",
-    "address": "서울특별시 서초구 잠원동 24-21",
-    "propertyType": "다세대",
-    "area": 0,
-    "minimumBid": 5278515000,
-    "estimatedValue": 2300000000,
-    "roi": -60.4,
-    "legalJudgment": "CAUTION",
-    "riskLevel": "medium",
-    "auctionDate": "2026-04-09",
-    "status": "예정",
-    "score": 47,
-    "summary": "서울중앙지방법원. 감정가 대비 41% 유찰 5회. 일괄매각",
-    "tags": [
-      "다회유찰",
-      "대폭할인",
-      "주의필요"
-    ],
-    "reportFile": "2021타경105850.json",
-    "court": "서울중앙지방법원",
-    "appraisalPrice": 12887000000,
-    "estimatedBid": 5806366500,
-    "failedAuctions": 5,
-    "nearbyTrade": {
-      "apt_nm": "월드메르디앙",
-      "deal_amount_만원": "230000",
-      "deal_date": "2026-03-30",
-      "area_sqm": "84.78",
-      "floor": "9",
-      "dong": "잠원동"
-    },
-    "specialNotes": "일괄매각",
-    "generatedAt": "2026-04-07T01:29:14.422Z",
-    "_rank": 50
+    "generatedAt": "2026-04-07T01:33:30.389Z",
+    "_rank": 25
   }
 ]

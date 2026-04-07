@@ -151,9 +151,21 @@ async function main() {
   const raw = JSON.parse(await readFile(inputPath, 'utf-8'))
   const records = Array.isArray(raw) ? raw : (raw.properties ?? [])
 
-  console.log(`[generate-data] ${records.length}개 매물 처리 중...`)
+  console.log(`[generate-data] ${records.length}개 레코드 로드 (중복 제거 전)`)
 
-  const properties = records.map(transformProperty)
+  // case_id 기준 중복 제거 — 첫 번째 등장 레코드 유지
+  const seen = new Set()
+  const unique = records.filter((r) => {
+    if (seen.has(r.case_id)) return false
+    seen.add(r.case_id)
+    return true
+  })
+
+  if (unique.length < records.length) {
+    console.log(`[generate-data] ⚠️  중복 제거: ${records.length - unique.length}건 제거 → ${unique.length}개 고유 매물`)
+  }
+
+  const properties = unique.map(transformProperty)
 
   // 수익률 기준 정렬 (높은 순), FAIL은 뒤로
   properties.sort((a, b) => {
