@@ -64,19 +64,41 @@ function inferLegalJudgment(specialNotes, failedAuctions) {
   return 'PASS'
 }
 
-function inferRiskLevel(judgment, yieldPct) {
+function inferRiskLevel(judgment, roi) {
   if (judgment === 'FAIL') return 'high'
   if (judgment === 'CAUTION') return 'medium'
-  if (yieldPct > 200) return 'medium'  // 수익률이 비현실적으로 높으면 데이터 이상 가능성
+  if (roi < 0) return 'medium'  // 역마진
   return 'low'
 }
 
 // ─── 파이프라인 데이터 → Property 형식 변환 ─────────
 
+function calcRoi(raw) {
+  // ALP-15 기준: (감정가 - 추정낙찰가) / 추정낙찰가 * 100
+  // estimated_bid = min_bid_price * 1.1 (10% 프리미엄 가정)
+  // pipeline yield_pct 는 인근 타 물건 시세 기준이라 이상치 발생 → 사용 안 함
+  const estimatedBid = raw.estimated_bid ?? (raw.min_bid_price * 1.1)
+  const appraisalPrice = raw.appraisal_price ?? 0
+  if (!estimatedBid || !appraisalPrice) return 0
+  const roi = (appraisalPrice - estimatedBid) / estimatedBid * 100
+  return parseFloat(Math.max(-99, Math.min(999, roi)).toFixed(1))
+}
+
+function calcScore(roi, judgment, failedAuctions) {
+  // 기본 점수: ROI 기반 (15%=60, 50%=75, 100%=85)
+  let base = Math.min(85, Math.max(30, 55 + roi * 0.3))
+  if (judgment === 'PASS') base += 10
+  if (judgment === 'FAIL') base -= 30
+  if (failedAuctions >= 5) base -= 5  // 다회유찰 패널티
+  if (failedAuctions >= 8) base -= 5
+  return Math.round(Math.max(0, Math.min(100, base)))
+}
+
 function transformProperty(raw, index) {
-  const roi = Math.min(raw.yield_pct ?? 0, 999.9)  // 이상치 cap
+  const roi = calcRoi(raw)
   const judgment = inferLegalJudgment(raw.special_notes, raw.failed_auctions)
-  const riskLevel = inferRiskLevel(judgment, raw.yield_pct)
+  const riskLevel = inferRiskLevel(judgment, roi)
+  const failedAuctions = parseInt(String(raw.failed_auctions ?? '0'), 10)
 
   return {
     id: raw.case_id,
@@ -87,20 +109,20 @@ function transformProperty(raw, index) {
     propertyType: raw.property_type ?? '기타',
     area: 0,  // 파이프라인 데이터에 면적 없음 - 추후 보완
     minimumBid: raw.min_bid_price ?? 0,
-    estimatedValue: raw.market_price ?? raw.appraisal_price ?? 0,
-    roi: parseFloat(roi.toFixed(1)),
+    estimatedValue: raw.appraisal_price ?? 0,  // 감정가를 시장가치로 사용
+    roi,
     legalJudgment: judgment,
     riskLevel,
     auctionDate: raw.auction_date ?? '',
     status: '예정',
-    score: Math.max(0, Math.min(100, Math.round(50 + roi / 20))),
+    score: calcScore(roi, judgment, failedAuctions),
     summary: buildSummary(raw),
     tags: buildTags(raw, judgment),
     reportFile: `${raw.case_id}.json`,
     court: raw.court ?? '',
     appraisalPrice: raw.appraisal_price ?? 0,
-    estimatedBid: raw.estimated_bid ?? 0,
-    failedAuctions: parseInt(String(raw.failed_auctions ?? '0'), 10),
+    estimatedBid: raw.estimated_bid ?? Math.round((raw.min_bid_price ?? 0) * 1.1),
+    failedAuctions,
     nearbyTrade: raw.nearby_trade ?? null,
     specialNotes: raw.special_notes ?? '',
     generatedAt: new Date().toISOString(),
