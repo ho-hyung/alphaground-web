@@ -3,6 +3,7 @@ import { readFile } from 'fs/promises'
 import path from 'path'
 import { PropertyCard } from '@/components/PropertyCard'
 import { FilterBar } from '@/components/FilterBar'
+import { createClient } from '@/lib/supabase/server'
 import type { Property } from '@/types/property'
 
 async function getProperties(searchParams: Record<string, string | string[] | undefined>) {
@@ -45,6 +46,10 @@ interface PageProps {
 export default async function HomePage({ searchParams }: PageProps) {
   const params = await searchParams
   const { properties, total } = await getProperties(params)
+
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+  const isLoggedIn = !!user
 
   const passCount = properties.filter((p) => p.legalJudgment === 'PASS').length
   const avgRoi =
@@ -93,7 +98,7 @@ export default async function HomePage({ searchParams }: PageProps) {
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {properties.map((property) => (
-            <PropertyCard key={property.id} property={property} />
+            <PropertyCard key={property.id} property={property} isLoggedIn={isLoggedIn} />
           ))}
         </div>
       )}

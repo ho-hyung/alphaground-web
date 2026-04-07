@@ -240,7 +240,7 @@ export default async function PropertyDetailPage({ params }: PageProps) {
       </div>
 
       {/* 상세 분석 — 유료 멤버십 전용 */}
-      <PaywallGate score={property.score}>
+      <PaywallGate caseNumber={property.caseNumber} score={property.score}>
         {report ? (
           <div className="space-y-6">
             {/* 법률 권리분석 */}
