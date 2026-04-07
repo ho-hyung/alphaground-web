@@ -55,5 +55,4 @@ jobs:
           git add alphaground-dashboard/public/data/properties.json
           git diff --staged --quiet || git commit -m "chore: update property data [skip ci]
 
-Co-Authored-By: Paperclip <noreply@paperclip.ing>"
           git push
